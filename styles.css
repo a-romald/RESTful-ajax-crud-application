@@ -1,0 +1,123 @@
+body {
+  background: #f9ebae;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  color: #5e5e5e;
+}
+div.container {width: 400px;}
+input, textarea, select {
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+}
+.button {
+  background: #eeeeee url(images/button.gif) repeat-x 0 0;
+  border: solid 1px #b1a874;
+  color: #7f7f7f;
+  font-size: 11px;
+  padding: 2px 6px 2px 6px;
+  cursor: pointer;
+  line-height: 14px !important;
+}
+.button:hover {
+  color: #333;
+  border-color: #857b42;
+}
+.button {
+  -moz-box-shadow: 0 0 2px #978f6c;
+  -webkit-box-shadow: 0 0 2px #978f6c;
+}
+.box {
+  background: #fbfcfc;
+  height: 100%;
+  padding: 1px;
+  margin-bottom: 20px;
+  margin-right: 4px;
+}
+.box-head {
+  background: #ba4c32;
+  height: 32px;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 12px;
+  white-space: nowrap;
+  border-bottom: solid 1px #fff;
+}
+.box-head .right {
+  padding-bottom: 5px;
+  line-height: 13px;
+}
+.box-head .right label, .box-head .right input {
+  float: left;
+}
+.box-head .right label {
+  padding: 4px 0 0 0;
+}
+.box-head .right input {
+  margin-left: 5px;
+}
+/***** Custom Styles *****/
+.box-content {
+  padding: 10px;
+}
+.box-content ul {
+  padding-left: 1px;
+  padding-top: 5px;
+}
+.box-content ul li {
+  list-style-type: none;
+  padding: 4px;
+  cursor: pointer;
+}
+.box-content ul li:hover {
+  background-color: #fff9e1;
+}
+.box-content ul li.activeDrill {
+  background-color: #f3c598;
+}
+.box-content ul li div {
+  float: right;
+}  
+a {
+  color: #ba4c32;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a img {
+  border: 0;
+}
+a:hover {
+  color: #8d341f;
+  text-decoration: none;
+}
+.left, .alignleft {
+  float: left;
+  display: inline;
+}
+.right, .alignright {
+  float: right;
+  display: inline;
+}
+a.tag-edit {
+  color: #6E6B65;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 0 0 0 14px;
+  background-repeat: no-repeat;
+  background-image: url(images/edit.gif);
+  margin-left: 14px;
+}
+a.tag-edit:hover {
+  color: #333333;
+}
+a.tag-delete {
+  color: #6E6B65;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 0 0 0 14px;
+  background-repeat: no-repeat;
+  background-image: url(images/del.gif);
+}
+a.tag-delete:hover {
+  color: #333333;
+}

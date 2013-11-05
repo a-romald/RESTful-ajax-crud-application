@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.1.0.js"></script>
+    <script type="text/javascript" src="rest_app.js"></script>
+    <!-- Handlebars template for tags list-->
+    <script id="template_tags" type="text/x-handlebars-template">
+       <ul id="tags_list">
+          {{#each tags}}
+            <li class="tagItem_{{this.id}}">
+                <span>{{this.title}}</span>
+                <div>
+                    <a href="#" class="tag-edit">Edit</a>&nbsp; &nbsp;
+                    <a href="#" class="tag-delete">Delete</a>
+                </div>
+            </li>
+          {{/each}}
+        </ul> 
+    </script>
+    <!-- Handlebars template for adding a single tag-->
+    <script id="template_tag_record" type="text/x-handlebars-template">
+       <li class="tagItem_{{info.id}}">
+            <span>{{info.title}}</span>
+            <div>
+                <a href="#" class="tag-edit">Edit</a>&nbsp; &nbsp;
+                <a href="#" class="tag-delete">Delete</a>
+            </div>
+        </li>
+    </script>
+    
+    <link rel="stylesheet" href="styles.css"/>
+	<title>Page</title>
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="tagsBox" class="box">
+    <div class="box-head">
+        <h2 class="left">Tags</h2>
+    </div>
+    <div class="box-content">
+        <!-- Textfield for new tag -->
+        <input type="text" placeholder="Add New Tag" id="add_tag"/>
+        <button class="button" id="but_add_tag">+ Add</button>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
